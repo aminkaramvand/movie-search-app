@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Domine:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+    <script type="module" src="script.js"></script>
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Welcome</h1>
+      <h2>Millions of movies to discover. Explore now</h2>
+      <form class="form-search">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Search for movie..."
+        />
+        <button class="search-btn">Search</button>
+      </form>
+      <button class="btn-popular">Click here to get popular movies</button>
+    </header>
+    <main class="main">
+      <div class="two-column">
+        <div class="column-left">
+          <select class="sort-by hidden">
+            <option value="most-popular">Most popular</option>
+            <option value="least-popular">Least popular</option>
+            <option value="highest-rating">Highest rating</option>
+            <option value="lowest-rating">Lowest rating</option>
+            <option value="release-asc">Newest</option>
+            <option value="release-des">Oldest</option>
+            <option value="title-asc">A-Z</option>
+            <option value="title-des">Z-A</option>
+          </select>
+          <ul class="movie-container">
+            <!-- <li class="movie">
+              <a href="#" class="movie-link">
+                <img src="" alt="image" class="movie-img" />
+                <div>
+                  <h4>inception</h4>
+                  <p class="movie-date">2010</p>
+                  <p class="movie-rate">⭐️8.4 <span>voted by</span></p>
+                </div>
+              </a>
+            </li> -->
+          </ul>
+        </div>
+        <div class="column-right">
+          <!-- <p class="movie-tagline"><em>tagline</em></p>
+          <div class="movie-review">
+            <div class="movie-head">
+              <img class="review-img" src="" alt="" />
+              <div class="review-data">
+                <h3>incepn</h3>
+                <p class="movie-date">2011</p>
+                <p class="genre"></p>
+                <p class="movie-rate">⭐️</p>
+                <p class="movie-time"></p>
+                <p class="movie-budget"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="overview">
+            <p></p>
+
+            <a class="movie-homepage" href="" target="_blank"> </a>
+          </div> -->
+        </div>
+      </div>
+      <div class="trailer-container"></div>
+    </main>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
