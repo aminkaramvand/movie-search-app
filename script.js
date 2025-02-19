@@ -1,6 +1,7 @@
 const API_KEY = "0d6fb6888b251112cd86cfc53314a46f";
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
+const GITHUB_BASE_URL = "/movie-search-app/";
 
 const overlay = document.querySelector(".overlay");
 
@@ -50,7 +51,7 @@ const displayResults = function () {
     .map(
       (movie) => `
      <li class="movie">
-      <a href="/#${movie.id}">
+      <a href="/#${GITHUB_BASE_URL + movie.id}">
         <img src="${IMAGE_BASE_URL + movie.poster_path}" alt="${
         movie.title
       }" class="movie-img" />
@@ -254,7 +255,7 @@ const generateBookmarkMarkup = function () {
          <button class="btn-remove-bookmark" data-movie-id="${
            movie.id
          }">&times;</button>
-          <a href="/#${movie.id}">
+          <a href="/#${GITHUB_BASE_URL + movie.id}">
             <img src="${IMAGE_BASE_URL + movie.poster_path}" alt="${
               movie.title
             }" class="bookmark-img" />
