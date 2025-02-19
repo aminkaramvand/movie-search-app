@@ -1,4 +1,4 @@
-const API_KEY = process.env.API_KEY;
+const API_KEY = "0d6fb6888b251112cd86cfc53314a46f";
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
