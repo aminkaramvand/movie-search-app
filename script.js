@@ -1,4 +1,5 @@
-const API_KEY = "0d6fb6888b251112cd86cfc53314a46f";
+const API_KEY = process.env.PARCEL_TMDB_API_KEY;
+console.log(API_KEY);
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 const GITHUB_BASE_URL = "/movie-search-app";
@@ -51,7 +52,7 @@ const displayResults = function () {
     .map(
       (movie) => `
      <li class="movie">
-      <a href="${`${GITHUB_BASE_URL}/#${movie.id}`}">
+      <a href="${`${""}/#${movie.id}`}">
         <img src="${IMAGE_BASE_URL + movie.poster_path}" alt="${
         movie.title
       }" class="movie-img" />
@@ -181,6 +182,7 @@ const displayMovieDetails = async function () {
 
 async function getPopularMovies() {
   try {
+    console.log(window.history);
     const res = await fetch(
       `${BASE_URL}/discover/movie?api_key=${API_KEY}&sort_by=popularity.desc`
     );
@@ -255,7 +257,7 @@ const generateBookmarkMarkup = function () {
          <button class="btn-remove-bookmark" data-movie-id="${
            movie.id
          }">&times;</button>
-          <a href="${`${GITHUB_BASE_URL}/#${movie.id}`}">
+          <a href="${`${""}/#${movie.id}`}">
             <img src="${IMAGE_BASE_URL + movie.poster_path}" alt="${
               movie.title
             }" class="bookmark-img" />
