@@ -1,5 +1,4 @@
 const API_KEY = process.env.PARCEL_TMDB_API_KEY;
-console.log(API_KEY);
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
 const GITHUB_BASE_URL = "/movie-search-app";
